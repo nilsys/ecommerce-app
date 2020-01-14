@@ -1,0 +1,11 @@
+<div class="banner-slider">
+  <ngx-slick-carousel class="carousel"
+                      #slickModal="slick-carousel"
+                      [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="100%" class="slidingImage">
+    </div>
+  </ngx-slick-carousel>
+  <i class="fas fa-angle-left prev" (click)="slickModal.slickPrev()"></i>
+  <i class="fas fa-angle-right next" (click)="slickModal.slickNext()"></i>
+</div>

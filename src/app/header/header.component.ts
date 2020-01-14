@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {BsDropdownConfig} from "ngx-bootstrap";
+import {BsDropdownConfig} from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-header',
