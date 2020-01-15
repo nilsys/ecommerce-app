@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+}
+.price {
+  margin-left: auto;
+  margin-top: 7px;
+}
+.button {
+  width: 100px;
+  height: 40px;
+}
