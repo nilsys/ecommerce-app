@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {BsDropdownModule, CollapseModule} from 'ngx-bootstrap';
+import {BsDropdownModule, CarouselModule, CollapseModule} from 'ngx-bootstrap';
 import {BannerComponent} from './banner-slider/banner.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
-import {ItemCardComponent} from "./item-card/item-card.component";
+import {ItemCardComponent} from './item-card/item-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import {ItemCardComponent} from "./item-card/item-card.component";
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
-    SlickCarouselModule
+    SlickCarouselModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
