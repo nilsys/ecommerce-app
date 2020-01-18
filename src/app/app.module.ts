@@ -15,7 +15,7 @@ import {ItemCardComponent} from './item-card/item-card.component';
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    ItemCardComponent
+    ItemCardComponent,
   ],
   imports: [
     BrowserModule,
