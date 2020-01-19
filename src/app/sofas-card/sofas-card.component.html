@@ -1,6 +1,6 @@
 <div class="card wrapper">
   <div class="card-header">
-    Chairs
+    Sofas
     <button class="btn btn-primary float-right">See All</button>
   </div>
   <div class="card-body">
@@ -10,7 +10,7 @@
                           [config]="slideConfig">
         <div ngxSlickItem class="slide" *ngFor="let item of items">
           <div class="card" style="width: 18rem">
-            <img src='{{item.img}}' class="card-img-top" height="200" alt="chair"/>
+            <img src='{{ item.img }}' class="card-img-top" height="200" alt="chair"/>
             <div class="card-body">
               <h5 class="card-title">{{ item.title }}</h5>
               <p class="card-text">{{ item.desc}}</p>
@@ -27,3 +27,4 @@
   <i class="fas fa-angle-left prev" (click)="slickModal.slickPrev()"></i>
   <i class="fas fa-angle-right next" (click)="slickModal.slickNext()"></i>
 </div>
+

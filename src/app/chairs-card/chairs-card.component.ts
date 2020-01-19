@@ -3,11 +3,11 @@ import {ItemService} from '../services/item.service';
 import {ItemCard} from '../shared/item-card.model';
 
 @Component({
-  selector: 'app-item-card',
-  templateUrl: 'item-card.component.html',
-  styleUrls: ['item-card.component.css']
+  selector: 'app-chairs-card',
+  templateUrl: 'chairs-card.component.html',
+  styleUrls: ['chairs-card.component.css']
 })
-export class ItemCardComponent implements OnInit {
+export class ChairsCardComponent implements OnInit {
   slideConfig = {
     slidesToScroll: 1,
     slidesToShow: 4,
@@ -18,6 +18,6 @@ export class ItemCardComponent implements OnInit {
   constructor(private item: ItemService) {
   }
   ngOnInit(): void {
-    this.items = this.item.items;
+    this.items = this.item.chairs;
   }
 }

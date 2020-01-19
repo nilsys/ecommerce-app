@@ -8,14 +8,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {BsDropdownModule, CarouselModule, CollapseModule} from 'ngx-bootstrap';
 import {BannerComponent} from './banner-slider/banner.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
-import {ItemCardComponent} from './item-card/item-card.component';
+import {ChairsCardComponent} from './chairs-card/chairs-card.component';
+import { BedsCardComponent } from './beds-card/beds-card.component';
+import { SofasCardComponent } from './sofas-card/sofas-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    ItemCardComponent,
+    ChairsCardComponent,
+    BedsCardComponent,
+    SofasCardComponent,
   ],
   imports: [
     BrowserModule,

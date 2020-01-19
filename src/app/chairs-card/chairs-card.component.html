@@ -1,0 +1,29 @@
+<div class="card wrapper">
+  <div class="card-header">
+    Chairs
+    <button class="btn btn-primary float-right">See All</button>
+  </div>
+  <div class="card-body">
+    <div class="content">
+      <ngx-slick-carousel class="carousel"
+                          #slickModal="slick-carousel"
+                          [config]="slideConfig">
+        <div ngxSlickItem class="slide" *ngFor="let item of items">
+          <div class="card" style="width: 18rem">
+            <img src='{{ item.img }}' class="card-img-top" height="200" alt="chair"/>
+            <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">{{ item.desc}}</p>
+              <div class="footer">
+                <button class="btn btn-primary button" type="button">Buy</button>
+                <p class="price">$ {{ item.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+  <i class="fas fa-angle-left prev" (click)="slickModal.slickPrev()"></i>
+  <i class="fas fa-angle-right next" (click)="slickModal.slickNext()"></i>
+</div>
