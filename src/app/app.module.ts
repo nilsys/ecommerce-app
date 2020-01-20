@@ -11,6 +11,7 @@ import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {ChairsCardComponent} from './chairs-card/chairs-card.component';
 import { BedsCardComponent } from './beds-card/beds-card.component';
 import { SofasCardComponent } from './sofas-card/sofas-card.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SofasCardComponent } from './sofas-card/sofas-card.component';
     ChairsCardComponent,
     BedsCardComponent,
     SofasCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
