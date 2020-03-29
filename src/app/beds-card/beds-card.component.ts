@@ -15,9 +15,12 @@ export class BedsCardComponent implements OnInit {
     infinite: false
   };
   items: ItemCard[] = [];
+
   constructor(private item: ItemService) {
   }
+
   ngOnInit(): void {
     this.items = this.item.beds;
   }
 }
+
