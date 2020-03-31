@@ -18,7 +18,7 @@ export class BedsCardComponent implements OnInit {
 
   constructor(private item: ItemService) {
   }
-
+  
   ngOnInit(): void {
     this.items = this.item.beds;
   }
